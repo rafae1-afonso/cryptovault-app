@@ -72,7 +72,7 @@ const Explore = () => {
     }
 
     useEffect(() => {
-        fetchCoins(`/api/coins?limit=100&currency=${currency.currency}`);
+        fetchCoins(`https://openapiv1.coinstats.app/coins?limit=100&currency=${currency.currency}`);
     }, [currency])
 
     return (
