@@ -81,11 +81,11 @@ const Explore = () => {
                 event.preventDefault();
                 const form = event.target as HTMLFormElement;
                 const inputValue = (form.elements[0] as HTMLInputElement).value
-                fetchCoins(`/api/coins?limit=100&name=${inputValue}&currency=${currency.currency}`)
+                fetchCoins(`https://openapiv1.coinstats.app/coins?limit=100&name=${inputValue}&currency=${currency.currency}`)
             }}>
                 <SearchInput type="search" placeholder="Search For Coin"></SearchInput>
             </StyledForm>
-            <RefreshButton onClick={() => { fetchCoins(`/api/coins?limit=100&currency=${currency.currency}`) }} ><IoMdRefreshCircle size={40} fill="white" /></RefreshButton>
+            <RefreshButton onClick={() => { fetchCoins(`https://openapiv1.coinstats.app/coins?limit=100&currency=${currency.currency}`) }} ><IoMdRefreshCircle size={40} fill="white" /></RefreshButton>
             <TableContainer className="table-responsive">
                 <table className="table">
                     <thead>

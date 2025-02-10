@@ -92,7 +92,7 @@ const VaultCard = ({ coinId }: { coinId: string }) => {
 
 
     useEffect(() => {
-        fetchCoins(`/api/coins/${coinId}?currency=${currency.currency}`);
+        fetchCoins(`https://openapiv1.coinstats.app/coins/${coinId}?currency=${currency.currency}`);
     }, [currency])
 
     return (

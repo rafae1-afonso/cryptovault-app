@@ -109,7 +109,7 @@ const Info = () => {
     }
 
     useEffect(() => {
-        fetchCoins(`/api/coins/${id}?currency=${currency.currency}`);
+        fetchCoins(`https://openapiv1.coinstats.app/coins/${id}?currency=${currency.currency}`);
     }, [currency])
 
     useEffect(() => {
