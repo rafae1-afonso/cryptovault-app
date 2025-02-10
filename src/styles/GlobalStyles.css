@@ -1,0 +1,21 @@
+:root {
+    --crypto-yellow: #ffbb3b;
+    --vault-blue: #567ece;
+    --vault-neon-blue: #5b91ff;
+    --vault-dark-blue: #3e5b96;
+    --rank-ultralight-blue: #e2eafa;
+    --default-gray: #adadad;
+    --up-green: #32dd8d;
+    --down-red: #ff6e5b;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url('../assets/Background.png');
+    background-repeat: repeat;
+}
