@@ -113,7 +113,9 @@ const VaultCard = ({ coinId }: { coinId: string }) => {
                                 navigate(`/info/${coin?.id}`);
                             }}>Details</button>
                             <button className='RemoveButton' onClick={() => {
-                                setVaultedCoins(vaultedCoins.filter((vaultedCoin: string) => vaultedCoin !== coin?.id))
+                                const newVaultedCoins = vaultedCoins.filter((vaultedCoin: string) => vaultedCoin !== coin?.id)
+                                setVaultedCoins(newVaultedCoins);
+                                localStorage.setItem('vaultedCoins', JSON.stringify(newVaultedCoins));
                             }}>Remove</button>
                         </div>
                     </>
