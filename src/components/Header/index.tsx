@@ -123,7 +123,7 @@ const Header = () => {
                     <option value="EUR">€ EUR</option>
                     <option value="BRL">R$ BRL</option>
                 </StyledSelect>
-                <a href="https://github.com/rafae1-afonso/cryptovault-app" target="_blank"><FaGithub size={40} fill="black" /></a>
+                <a href="https://github.com/rafae1-afonso/cryptovault-app" target="_blank"> <FaGithub size={40} fill="black" /> </a>
             </StyledHeader>
             <StyledNav>
                 <Link to="/" className="navLink">Home</Link>
